@@ -1,6 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
 
+function CreateDate() {
+	const dateYear = new Date().getFullYear(); // во всем файле декларативный подход
+
+	return (
+		<p className='todayYear'>
+			{dateYear}
+		</p>
+	)
+}
+
 export const App = () => {
 	return (
 		<div className="App">
@@ -17,6 +27,7 @@ export const App = () => {
 				>
 					Learn React
 				</a>
+				<CreateDate/>
 			</header>
 		</div>
 	);
